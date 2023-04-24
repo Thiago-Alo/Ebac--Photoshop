@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                gappred: '#D10029',
+                gapblack: '#434343',
+                gapgrey: '#8C8C8C',
+              }
+            }
+          }
+        }
+    </script>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body class="">
+    <!-- NAVBAR AND BANNER -->
+    <div class="container-top w-screen">
+        <div class="banner-home">
+            <!-- NAVBAR -->
+            <header class="flex items-end justify-between bg-white h-[130px]">
+                <div class="logo">
+                    <img src="./images/logo-gapp.png" alt="GAPP">
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li> <a href="#">Home</a> </li>
+                        <li> <a href="#">Quem somos</a> </li>
+                        <li> <a href="#">Produtos e serviços</a> </li>
+                        <li> <a href="#">Aplicações</a> </li>
+                        <li> <a class="btn-speak" href="#">Fale conosco</a> </li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="banner" class="flex w-full h-[350px]"> 
+                <!-- IMAGE BANNER -->
+                <figure class="h-full w-full">
+                    <img class="w-full h-full object-fill" src="./images/banner-01.jpg" alt="banner">
+                </figure>
+                <div class="pl-7 py-12 w-4/5 bg-gappred flex flex-col justify-between text-white">
+                    <div class="pr-20">
+                        <h2 class="text-3xl">Ferramentaria</h2>
+                        <p class="pb-14 pt-4">Fazemos usinagem em amterias ferrosos, não ferrosos, plásticos e elastomeros. Alem da fabricação de diversar peças, todas customizadas para a necessidade do cliente, respeitando o desenho ou amostras</p>
+                    </div>
+                    <!-- BUTTONs -->
+                    <div class="flex items-end justify-between">
+                        <div class="flex items-center justify-center">
+                            <button class="btn-arrow flex items-center justify-center"> 
+                                <svg width="14px" height="20px" viewBox="-4.5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Dribbble-Light-Preview" transform="translate(-345.000000, -6679.000000)" fill="#fff">
+                                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                <path d="M299.633777,6519.29231 L299.633777,6519.29231 C299.228878,6518.90256 298.573377,6518.90256 298.169513,6519.29231 L289.606572,6527.55587 C288.797809,6528.33636 288.797809,6529.60253 289.606572,6530.38301 L298.231646,6538.70754 C298.632403,6539.09329 299.27962,6539.09828 299.685554,6538.71753 L299.685554,6538.71753 C300.100809,6538.32879 300.104951,6537.68821 299.696945,6537.29347 L291.802968,6529.67648 C291.398069,6529.28574 291.398069,6528.65315 291.802968,6528.26241 L299.633777,6520.70538 C300.038676,6520.31563 300.038676,6519.68305 299.633777,6519.29231" id="arrow_left-[#335]"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>    
+                            </button>
+                            <button class="ml-[10px] btn-arrow rotate-180 flex items-center justify-center"> 
+                                <svg width="14px" height="20px" viewBox="-4.5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Dribbble-Light-Preview" transform="translate(-345.000000, -6679.000000)" fill="#fff">
+                                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                <path d="M299.633777,6519.29231 L299.633777,6519.29231 C299.228878,6518.90256 298.573377,6518.90256 298.169513,6519.29231 L289.606572,6527.55587 C288.797809,6528.33636 288.797809,6529.60253 289.606572,6530.38301 L298.231646,6538.70754 C298.632403,6539.09329 299.27962,6539.09828 299.685554,6538.71753 L299.685554,6538.71753 C300.100809,6538.32879 300.104951,6537.68821 299.696945,6537.29347 L291.802968,6529.67648 C291.398069,6529.28574 291.398069,6528.65315 291.802968,6528.26241 L299.633777,6520.70538 C300.038676,6520.31563 300.038676,6519.68305 299.633777,6519.29231" id="arrow_left-[#335]"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>    
+                            </button>
+                        </div>
+                        <div class="pr-6">
+                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="" id="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- CONTAINER CENTER -->
+    <section id="content" class="p-8 container-center grid grid-cols-3 gap-9 h-[300px] text-[#8C8C8C] bg-white">
+        <div>
+            <h2 class="text-2xl text-gapblack">Conheça a GAPP</h2>
+            <p class="py-5"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est facere, sunt nesciunt numquam id corrupti</p>
+            <a href="#" class="btn-saiba-mais w-fit flex items-center">
+                Saiba mais
+                <div class="btn-know-arrow">
+                    <svg width="14px" height="20px" viewBox="-4.5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Dribbble-Light-Preview" transform="translate(-345.000000, -6679.000000)" fill="#fff">
+                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                    <path d="M299.633777,6519.29231 L299.633777,6519.29231 C299.228878,6518.90256 298.573377,6518.90256 298.169513,6519.29231 L289.606572,6527.55587 C288.797809,6528.33636 288.797809,6529.60253 289.606572,6530.38301 L298.231646,6538.70754 C298.632403,6539.09329 299.27962,6539.09828 299.685554,6538.71753 L299.685554,6538.71753 C300.100809,6538.32879 300.104951,6537.68821 299.696945,6537.29347 L291.802968,6529.67648 C291.398069,6529.28574 291.398069,6528.65315 291.802968,6528.26241 L299.633777,6520.70538 C300.038676,6520.31563 300.038676,6519.68305 299.633777,6519.29231" id="arrow_left-[#335]"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> 
+                </div>
+            </a>
+        </div>
+        <div>
+            <h2 class="text-2xl text-gapblack">Produtos e Serviços</h2>
+            <p class="py-5"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est facere, sunt nesciunt numquam id corrupti</p>
+            <a href="#" class="btn-saiba-mais w-fit flex items-center">
+                Saiba mais
+                <div class="btn-know-arrow">
+                    <svg width="14px" height="20px" viewBox="-4.5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Dribbble-Light-Preview" transform="translate(-345.000000, -6679.000000)" fill="#fff">
+                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                    <path d="M299.633777,6519.29231 L299.633777,6519.29231 C299.228878,6518.90256 298.573377,6518.90256 298.169513,6519.29231 L289.606572,6527.55587 C288.797809,6528.33636 288.797809,6529.60253 289.606572,6530.38301 L298.231646,6538.70754 C298.632403,6539.09329 299.27962,6539.09828 299.685554,6538.71753 L299.685554,6538.71753 C300.100809,6538.32879 300.104951,6537.68821 299.696945,6537.29347 L291.802968,6529.67648 C291.398069,6529.28574 291.398069,6528.65315 291.802968,6528.26241 L299.633777,6520.70538 C300.038676,6520.31563 300.038676,6519.68305 299.633777,6519.29231" id="arrow_left-[#335]"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> 
+                </div>
+            </a>
+        </div>
+        <div >
+            <h2 class="pb-5 text-2xl text-gapblack">Principais Aplicações</h2>
+            <a href="#">
+                <img class="h-[140px] w-[250px]" src="./images/img-video.jpg" alt="video">
+            </a>
+        </div>
+    </section>
+    <footer class="bg-[#E7E7E7] h-[147px]">
+        <div class="container-footer h-full flex items-center">
+            <img src="./images/logo-gapp-footer.png" alt="loguinho">
+            <div class="px-8 w-3/5">
+                <p>
+                    Rua XxxXxXxXx - XxxXxXxXx<br>
+                    CEP: XXXXXX-XXXX São Paulo, Sp - Brasil<br>
+                    Tel: +55 11 XXXXXX-XXXXXXX<br>
+                    E-mail: <span class="text-gappred">contato@gapp.com.br</span>
+                </p>
+            </div>
+            <div class="h-4/5 w-2 bg-gapgrey blur-sm"></div>
+            <div class="pl-5 w-full flex items-center justify-between">
+                <img  src="./images/icon-location.png" alt="mapa">
+                <div class="text-end">
+                    <h3 class="text-gappred font-semibold">Fale Conosco</h3>
+                    <p class="font-light">Copyright &copy; Industrial - Todos os direitos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

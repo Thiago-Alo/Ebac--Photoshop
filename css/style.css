@@ -1,0 +1,135 @@
+:root {
+    --gapgrey: #8C8C8C;
+    --gapblack: #434343;
+    --gappred: #D10029;
+    --gapw: #fff;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+/* NAVBAR AND BANNER */
+header {
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-top {
+    background-image: radial-gradient( var(--gapgrey),var(--gapblack));
+}
+.banner-home{
+    width: 990px;
+    margin: 0 auto;
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu ul li {
+    margin: auto calc(34px / 2);
+}
+
+.menu ul li a {
+    font-size: 13px;
+    color: var(--gappred);
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    font-weight: 600;
+    padding-bottom: 6px;
+}
+.menu ul li a:hover{
+    color: var(--gapgrey);
+    border-bottom:4px solid var(--gapgrey);
+}
+/* CONTAINER CENTER */
+.container-center{
+    width: 990px;
+    margin: 0 auto;
+}
+/* CONTAINER FOOTER */
+.container-footer{
+    width: 990px;
+    margin: 0 auto;
+}
+/* BUTTONS */
+.btn-speak {
+    font-size: 13px;
+    background-color: var(--gappred) ;
+    color: var(--gapw) !important;
+    padding: 10px;
+    transition: all .3;
+}
+.btn-speak:hover{
+    border:none !important;
+    background-color: var(--gapblack);
+}
+.btn-arrow{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #980020;
+    transition: all .4s;
+}
+.btn-arrow:hover{
+    background:#7B0019 ;
+}
+
+.btn-saiba-mais {
+    border: 1px solid var(--gapgrey);
+    color: var(--gappred);
+    font-size: 13px;
+    line-height: 15.6pt;
+    padding: 5px;
+    text-decoration: none;
+    transition: all .5 ease-in-out;
+    font-weight: 600;
+}
+.btn-saiba-mais .btn-know-arrow{
+    width: 25px;
+    height: 22px;
+    border-radius: 2px;
+    background: var(--gapgrey);
+    transition: all .4s;
+    transform: rotate(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:4px;
+    transition: all .5 ease-in-out;
+
+}
+.btn-saiba-mais:hover {
+    color: #333333;
+}
+.btn-saiba-mais:hover .btn-know-arrow{
+    background: var(--gappred);
+}
+
+/* // INPUT */
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    background-color: var(--gapblack);
+    opacity: .3;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+input[type="checkbox"]:checked{
+    background-color: var(--gapblack);
+    opacity: 1;
+}
